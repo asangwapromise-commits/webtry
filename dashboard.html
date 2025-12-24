@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f6fc;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #007BFF;
+            color: white;
+        }
+
+        .back-btn {
+            background: white;
+            color: #007BFF;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .back-btn:hover {
+            background: #e6e6e6;
+        }
+
+        .search-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-container input {
+            width: 50%;
+            max-width: 400px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        /* Welcome Container */
+        .welcome-container {
+            background: skyblue;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Profile Button */
+        .profile-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #007BFF;
+            color: white;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .profile-btn:hover {
+            background: #3399ff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <!-- Back Button goes to login page -->
+        <button class="back-btn" onclick="window.location.href='login.html'">← Back</button>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+
+    <!-- Welcome Container -->
+    <div class="welcome-container">
+        Welcome to Your Dashboard
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <p>This is where your main content goes.</p>
+    </div>
+
+    <!-- Profile Button -->
+    <button class="profile-btn" title="Profile" onclick="window.location.href='profilepage.html'">
+        👤
+    </button>
+
+</body>
+</html>
